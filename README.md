@@ -26,24 +26,15 @@ You can use the [`summary`](https://www.tensorflow.org/api_docs/python/tf/keras/
 
 ##model summary 
 Model: "sequential"
-
-'''
+input_shape = (32,32,3)
 conv2d (Conv2D)              (None, 30, 30, 6)         168       
-_________________________________________________________________
 max_pooling2d (MaxPooling2D) (None, 15, 15, 6)         0         
-_________________________________________________________________
 conv2d_1 (Conv2D)            (None, 13, 13, 16)        880       
-_________________________________________________________________
 max_pooling2d_1 (MaxPooling2 (None, 6, 6, 16)          0         
-_________________________________________________________________
 flatten (Flatten)            (None, 576)               0         
-_________________________________________________________________
 dense (Dense)                (None, 120)               69240     
-_________________________________________________________________
 dense_1 (Dense)              (None, 84)                10164     
-_________________________________________________________________
 dense_2 (Dense)              (None, 43)                3655      
-'''
 
 ##result
 ![CNN_result](https://user-images.githubusercontent.com/94951202/159159254-3cad5cee-4819-4351-95fc-652309eccaff.png)

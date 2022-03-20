@@ -26,8 +26,10 @@ You can use the [`summary`](https://www.tensorflow.org/api_docs/python/tf/keras/
 
 ##model summary 
 Model: "sequential"
+
+'''
 _________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param  
 =================================================================
 conv2d (Conv2D)              (None, 30, 30, 6)         168       
 _________________________________________________________________
@@ -45,6 +47,7 @@ dense_1 (Dense)              (None, 84)                10164
 _________________________________________________________________
 dense_2 (Dense)              (None, 43)                3655      
 =================================================================
+'''
 
 ##result
 ![CNN_result](https://user-images.githubusercontent.com/94951202/159159254-3cad5cee-4819-4351-95fc-652309eccaff.png)

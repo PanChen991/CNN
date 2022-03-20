@@ -25,7 +25,7 @@ You can use the [`summary`](https://www.tensorflow.org/api_docs/python/tf/keras/
 
 
 ##model summary 
-Model: "sequential"
+
 input_shape = (32,32,3)
 conv2d (Conv2D)              (None, 30, 30, 6)         168       
 max_pooling2d (MaxPooling2D) (None, 15, 15, 6)         0         

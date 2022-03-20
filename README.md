@@ -23,10 +23,25 @@ Don't forget the basic structure of a convnet: convolutional layer, activation a
 
 You can use the [`summary`](https://www.tensorflow.org/api_docs/python/tf/keras/Model#summary) method of the Keras model API to print the description of your model.
 
-
-##model summary 
+## model code
+def create_network():
+    net = tf.keras.models.Sequential()
+    input_shape = [32, 32, 3]
+    net.add(Conv2D(6, kernel_size=(3, 3), strides=(1, 1), activation='relu', 
+                   input_shape=input_shape))
+    net.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+    net.add(Conv2D(16, kernel_size=(3, 3), strides=(1, 1), activation='relu'))   
+    net.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+    net.add(Flatten())
+    net.add(Dense(120, activation='relu'))
+    net.add(Dense(84, activation='relu'))
+    net.add(Dense(43))
+    return net
+   
+## model summary 
 
 input_shape = (32,32,3)
+
 conv2d (Conv2D)              (None, 30, 30, 6)         168       
 max_pooling2d (MaxPooling2D) (None, 15, 15, 6)         0         
 conv2d_1 (Conv2D)            (None, 13, 13, 16)        880       
@@ -36,6 +51,6 @@ dense (Dense)                (None, 120)               69240
 dense_1 (Dense)              (None, 84)                10164     
 dense_2 (Dense)              (None, 43)                3655      
 
-##result
+## result
 
 ![CNN_result](https://user-images.githubusercontent.com/94951202/159159254-3cad5cee-4819-4351-95fc-652309eccaff.png)

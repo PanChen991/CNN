@@ -22,3 +22,7 @@ A good starting point for small networks is LeNet5. You will find many existing 
 Don't forget the basic structure of a convnet: convolutional layer, activation and pooling.
 
 You can use the [`summary`](https://www.tensorflow.org/api_docs/python/tf/keras/Model#summary) method of the Keras model API to print the description of your model.
+
+
+##result
+![CNN_result](https://user-images.githubusercontent.com/94951202/159159254-3cad5cee-4819-4351-95fc-652309eccaff.png)

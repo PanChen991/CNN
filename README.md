@@ -37,4 +37,5 @@ dense_1 (Dense)              (None, 84)                10164
 dense_2 (Dense)              (None, 43)                3655      
 
 ##result
+
 ![CNN_result](https://user-images.githubusercontent.com/94951202/159159254-3cad5cee-4819-4351-95fc-652309eccaff.png)

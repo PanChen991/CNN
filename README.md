@@ -1,5 +1,3 @@
-# CNN
-
 # Exercise 2 - CNN
 
 ## Objective
@@ -24,7 +22,3 @@ A good starting point for small networks is LeNet5. You will find many existing 
 Don't forget the basic structure of a convnet: convolutional layer, activation and pooling.
 
 You can use the [`summary`](https://www.tensorflow.org/api_docs/python/tf/keras/Model#summary) method of the Keras model API to print the description of your model.
-
-
-##result
-![CNN_result](https://user-images.githubusercontent.com/94951202/159158944-e2821383-c54e-40fa-872c-b4e73eb8614e.png)
